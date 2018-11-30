@@ -1,0 +1,128 @@
+@font-face {
+    font-family: skia;
+    src: url('../font/skia.woff');
+}
+
+body {
+    background: black;
+    color: white;
+    transition: all .6s cubic-bezier(.33, .63, .65, .99);
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    color: #a06577;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 48px;
+    transition: all .6s cubic-bezier(.33, .63, .65, .99);
+    z-index: 100;
+}
+
+header:hover {
+    background: black;
+}
+
+.nav_items:hover {
+    background: #a06577;
+    color: black;
+}
+
+.nav_items {
+    padding-top: 8px;
+    cursor: hand;
+    height: 40px;
+    font-size: 22px;
+    transition: all .6s cubic-bezier(.33, .63, .65, .99);
+}
+
+.replace {
+    height: 48px;
+}
+
+.headline {
+    background-image: url("../img/linear.png");
+    background-position: center;
+    -webkit-background-clip: text;
+    font-size: 48px;
+    text-align: center;
+    margin: 32px auto;
+    font-weight: 700;
+    height: 72px;
+    color: transparent !important;
+}
+
+.headline > p {
+    width: 100%;
+    height: 100%;
+    color: transparent !important;
+}
+
+.head_img_container {
+    text-align: center;
+    margin-bottom: 280px;
+}
+
+.head_img_container > img {
+    width: 60vw;
+}
+
+.content_container {
+    text-align: center;
+    margin-top: 180px;
+}
+
+.content_box {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    border: 2px solid #ae7473;
+    width: 50vw;
+}
+
+.content {
+    position: relative;
+    border: 2px solid #ae7473;
+}
+
+.content > img {
+    width: 100%;
+}
+
+.content:hover .content_description {
+    opacity: 1;
+}
+
+.content_description {
+    opacity: 0;
+    cursor: default;
+    text-align: left;
+    background: rgba(174, 116, 115, .8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity .6s cubic-bezier(.33, .63, .65, .99);
+}
+
+.content_description > h4 {
+    font-family: skia, Arial, sans-serif;
+    font-size: 30px;
+    margin-left: 18px;
+    margin-top: 32px;
+    font-weight: 100;
+}
+
+.content_description > h5 {
+    font-family: skia, Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 18px;
+    margin-top: 32px;
+    font-weight: 100;
+}
