@@ -90,6 +90,7 @@ header:hover {
 .content {
     position: relative;
     border: 2px solid #ae7473;
+    background: black;
 }
 
 .content > img {
@@ -111,6 +112,15 @@ header:hover {
     transition: opacity .6s cubic-bezier(.33, .63, .65, .99);
 }
 
+.content_description > h3 {
+    font-family: skia, Arial, sans-serif;
+    font-size: 38px;
+    margin-left: 18px;
+    margin-top: 32px;
+    line-height: 65px;
+    font-weight: 100;
+}
+
 .content_description > h4 {
     font-family: skia, Arial, sans-serif;
     font-size: 30px;
@@ -125,4 +135,8 @@ header:hover {
     margin-left: 18px;
     margin-top: 32px;
     font-weight: 100;
+}
+
+footer {
+    height: 164px;
 }
