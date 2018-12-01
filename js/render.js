@@ -4,19 +4,19 @@ const db_pre19c = [
         title: "hzytql",
         year: "2015",
         description: "hzytql",
-        colors: ["red", "orange", "dodgerblue", "greenyellow", "purple"],
+        colors: ["#d3a395", "#e3b8a8", "#b67281", "#d8a39d", "#aa3126"],
     }, {
         id: 2,
         title: "hzytql",
         year: "2015",
         description: "hzytql",
-        colors: ["red", "orange", "dodgerblue", "greenyellow", "purple"],
+        colors: ["#d07b82", "#bf6461", "#d9ac95", "#daa796", "#c97a75"],
     }, {
         id: 3,
         title: "hzytql",
         year: "2015",
         description: "hzytql",
-        colors: ["red", "orange", "dodgerblue", "greenyellow", "purple"],
+        colors: ["#89443d", "#987360", "#ad5e3f", "#942900", "#7c312e"],
     }
 ];
 
@@ -26,19 +26,19 @@ const db_19c = [
         title: "hzytql",
         year: "2016",
         description: "",
-        colors: ["red", "orange", "dodgerblue", "greenyellow", "purple"],
+        colors: ["#b54746", "#e6a98a", "#d68e76", "#b06256", "#dc2e25"],
     }, {
         id: 2,
         title: "hzytql",
         year: "2016",
         description: "",
-        colors: ["red", "orange", "dodgerblue", "greenyellow", "purple"],
+        colors: ["#e87769", "#efab96", "#c16c58", "#e7a686", "#a97277"],
     }, {
         id: 3,
         title: "hzytql",
         year: "2016",
         description: "",
-        colors: ["red", "orange", "dodgerblue", "greenyellow", "purple"],
+        colors: ["#b7e68", "#f8decd", "#f89b8c", "#e1a79c", "#e1856c"],
     }
 ];
 
@@ -48,19 +48,19 @@ const db_20c = [
         title: "hzytql",
         year: "2017",
         description: "",
-        colors: ["red", "orange", "dodgerblue", "greenyellow", "purple"],
+        colors: ["#7c5158", "#734144", "#a98e87", "#c9949a", "#cbaac9"],
     }, {
         id: 2,
         title: "hzytql",
         year: "2017",
         description: "",
-        colors: ["red", "orange", "dodgerblue", "greenyellow", "purple"],
+        colors: ["#ea8d6c", "#f41b23", "#d48a71", "#d57569", "#c9867d"],
     }, {
         id: 3,
         title: "hzytql",
         year: "2017",
         description: "",
-        colors: ["red", "orange", "dodgerblue", "greenyellow", "purple"],
+        colors: ["#a6847a", "#dfc0ae", "#faa199", "#e28381", "#e05858"],
     }
 ];
 
@@ -70,19 +70,19 @@ const db_21c = [
         title: "hzytql",
         year: "2018",
         description: "",
-        colors: ["red", "orange", "dodgerblue", "greenyellow", "purple"],
+        colors: ["#d6a6a2", "#f8988c", "#90312d", "#e9c4b1", "#aa603b"],
     },{
         id: 2,
         title: "hzytql",
         year: "2018",
         description: "",
-        colors: ["red", "orange", "dodgerblue", "greenyellow", "purple"],
+        colors: ["#ffd5cd", "#f26c6d", "#d78e99", "#fd8284", "#f5bec3"],
     },{
         id: 3,
         title: "hzytql",
         year: "2018",
         description: "",
-        colors: ["red", "orange", "dodgerblue", "greenyellow", "purple"],
+        colors: ["#d290b6", "#b53363", "#c95181", "#fc8be5", "#dd3280"],
     }
 ];
 
