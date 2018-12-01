@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pink Gallery Content</title>
+    <title>Pink Gallery</title>
+    <meta charset="UTF-8"/>
     <link rel="stylesheet" href="css/css.css"/>
 </head>
-<body>
-    <div class="page_title">
-        <p>HZYTQL hzytql</p>
-        <p>2018</p>
+<body style="background:#1A1C1E !important;">
+<script src="js/render.js"></script>
+<script>
+    let render = new Render();
+    let centuryID = Render.render_url_get("c");
+    let picID = Render.render_url_get("y");
+    let centuryString = Render.centuryToString(centuryID);
+    let data = render.db_find(centuryID, picID);
+</script>
+<div class="page_title">
+    <p>
+        <script>document.write(data.title);</script>
+    </p>
+    <p>
+        <script>document.write(data.year);</script>
+    </p>
+</div>
+<div class="page_big_img_container">
+    <script>
+        let str_head = `<img src="img/${centuryString}/1_head.jpg"/>`;
+        document.write(str_head);
+    </script>
+</div>
+<p class="page_subtitle">Pink Platte</p>
+<div class="color_block_container">
+    <div class="color_block_grid">
+        <script>
+            for (let i = 0; i < 5; i++) {
+                let str_color = `<div class="color_block" style="background:${data.colors[i]};"></div>`;
+                document.write(str_color);
+            }
+        </script>
     </div>
-    <div class="page_big_img_container">
-        <img src="img/pre19c/1_head.jpg"/>
-    </div>
-    <p class="page_subtitle">Pink Platte</p>
-    <div class="color_block_container">
-        <div class="color_block_grid">
-            <div class="color_block" style="background:red;"></div>
-            <div class="color_block" style="background:orange;"></div>
-            <div class="color_block" style="background:dodgerblue;"></div>
-            <div class="color_block" style="background:greenyellow;"></div>
-            <div class="color_block" style="background:purple;"></div>
-        </div>
-    </div>
-    <p class="page_subtitle">Story</p>
-    <div class="page_details" id="page_scroll">
-        <p>
-            <script>
-                for(let i=0;i<100;i++){
-                    document.write("洪志远太强了");
-                }
-            </script>
-        </p>
-    </div>
-    <p class="page_subtitle">More</p>
-    <div class="more_ul_container">
-        <ul class="more_ul">
-            <li style="left:0;"><img src="img/pre19c/1_1.jpg"/></li>
-            <li class="more_container_active" style="left:20vw;"><img src="img/pre19c/1_2.jpg"/></li>
-            <li style="left: 40vw;"><img src="img/pre19c/1_3.jpg"/></li>
-        </ul>
-    </div>
+</div>
+<p class="page_subtitle">Story</p>
+<div class="page_details" id="page_scroll">
+    <p>
+        <script>
+            document.write(data.description);
+        </script>
+    </p>
+</div>
+<p class="page_subtitle">More</p>
+<div class="more_ul_container">
+    <ul class="more_ul">
+        <script>
+            let str_ul = `<li style="left:0;"><img src="img/${centuryString}/1_1.jpg"/></li>
+        <li class="more_container_active" style="left:20vw;"><img src="img/${centuryString}/1_2.jpg"/></li>
+        <li style="left: 40vw;"><img src="img/${centuryString}/1_3.jpg"/></li>`;
+            document.write(str_ul);
+        </script>
+    </ul>
+</div>
 </body>
 </html>
