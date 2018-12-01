@@ -9,8 +9,8 @@
 <script src="js/render.js"></script>
 <script>
     let render = new Render();
-    let centuryID = Render.render_url_get("c");
-    let picID = Render.render_url_get("y");
+    let centuryID = Render.renderUrlGet("c");
+    let picID = Render.renderUrlGet("y");
     let centuryString = Render.centuryToString(centuryID);
     let data = render.db_find(centuryID, picID);
 </script>
@@ -24,7 +24,7 @@
 </div>
 <div class="page_big_img_container">
     <script>
-        let str_head = `<img src="img/${centuryString}/1_head.jpg"/>`;
+        let str_head = `<img src="img/${centuryString}/${picID}_head.jpg"/>`;
         document.write(str_head);
     </script>
 </div>
@@ -51,9 +51,9 @@
 <div class="more_ul_container">
     <ul class="more_ul">
         <script>
-            let str_ul = `<li style="left:0;"><img src="img/${centuryString}/1_1.jpg"/></li>
-        <li class="more_container_active" style="left:20vw;"><img src="img/${centuryString}/1_2.jpg"/></li>
-        <li style="left: 40vw;"><img src="img/${centuryString}/1_3.jpg"/></li>`;
+            let str_ul = `<li style="left:0;"><img src="img/${centuryString}/${picID}_1.jpg"/></li>
+        <li class="more_container_active" style="left:20vw;"><img src="img/${centuryString}/${picID}_2.jpg"/></li>
+        <li style="left: 40vw;"><img src="img/${centuryString}/${picID}_3.jpg"/></li>`;
             document.write(str_ul);
         </script>
     </ul>
