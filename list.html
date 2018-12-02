@@ -21,14 +21,15 @@
 </script>
 <div class="list_root">
     <script>
-        for(let item of data){
+        for (let item of data) {
             let description = item.description;
-            if(description.length >= 350){
-                description = description.substring(0,350)+"...";
+            if (description.length >= 350) {
+                description = description.substring(0, 350) + "...";
             }
             let buffer = `<div class="list_container">
         <div class="list_left">
-            <img src="img/${centuryString}/${item.id}_head.jpg"/>
+            <div class="list_img_container" style="background-image:url('img/${centuryString}/${item.id}_head.jpg');">
+            </div>
         </div>
         <div class="list_right">
             <h3><a href="content.html?c=${centuryID}&y=${item.id}">${item.title}</a></h3>

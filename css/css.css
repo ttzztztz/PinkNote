@@ -278,6 +278,7 @@ footer {
 
 .page_title {
     font-family: skia2, skia, Arial, sans-serif;
+    padding: 72px 0;
     font-size: 38px;
     margin-top: 64px;
     color: #F9E1E9;
@@ -406,6 +407,11 @@ footer {
     position: relative;
 }
 
+.more_container_noactive {
+    transform: scale(0.8, 0.8);
+    cursor:pointer;
+}
+
 .more_container_active {
     z-index: 50;
     transform: scale(1.15, 1.15);
@@ -413,7 +419,7 @@ footer {
 }
 
 .more_container {
-    transform: scale(0.8, 0.8);
+
 }
 
 .list_root {
@@ -432,6 +438,14 @@ footer {
     }
 }
 
+.list_img_container {
+    width: 18vw;
+    height: 18vw;
+    position: absolute;
+    overflow: hidden;
+    background-position: center;
+}
+
 .list_container {
     border: 3px #ad7372 solid;
     display: grid;
@@ -441,11 +455,10 @@ footer {
     height: auto;
 }
 
-.list_left > img {
-    width: 100%;
-}
 
 .list_left {
+    position: relative;
+    text-align: center;
     margin-right: 50px;
 }
 
