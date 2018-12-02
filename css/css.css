@@ -82,6 +82,7 @@ header:hover {
 .content_container {
     text-align: center;
     margin-top: 180px;
+    position: relative;
 }
 
 .content_box {
@@ -145,29 +146,58 @@ header:hover {
     transition: opacity .6s cubic-bezier(.33, .63, .65, .99);
 }
 
+@media screen and (min-width: 1000px) {
+    .content_description > h3 {
+        font-size: 38px;
+        line-height: 65px;
+    }
+
+    .content_description > h4 {
+        font-size: 30px;
+    }
+
+    .content_description > h5 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .content_description > h3 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .content_description > h4 {
+        font-size: 30px;
+    }
+
+    .content_description > h5 {
+        font-size: 20px;
+    }
+}
+
 .content_description > h3 {
     font-family: skia2, skia, Arial, sans-serif;
-    font-size: 38px;
-    margin-left: 18px;
-    margin-top: 32px;
-    line-height: 65px;
     font-weight: 100;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 24px;
 }
 
 .content_description > h4 {
     font-family: skia2, skia, Arial, sans-serif;
-    font-size: 30px;
-    margin-left: 18px;
-    margin-top: 32px;
     font-weight: 100;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 24px;
 }
 
 .content_description > h5 {
     font-family: skia2, skia, Arial, sans-serif;
-    font-size: 20px;
-    margin-left: 18px;
-    margin-top: 32px;
     font-weight: 100;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 24px;
 }
 
 footer {
@@ -224,7 +254,8 @@ footer {
 }
 
 .color_block:hover {
-    transform: scale(1.25, 1.25);
+    transform: scale(1.15, 1.15);
+    box-shadow: 0 0 36px rgba(0, 0, 0, 0.2);
 }
 
 .page_details {
@@ -269,6 +300,10 @@ footer {
     overflow-y: scroll;
     overflow-x: hidden;
     margin: 0 12vw;
+}
+
+.page_story_container {
+    position: relative;
 }
 
 .more_ul {
