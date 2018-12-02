@@ -25,6 +25,35 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        height: 48px;
+    }
+
+    .nav_items {
+        font-size: 22px;
+        padding-top: 8px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        height: 64px;
+    }
+
+    .nav_items {
+        font-size: 32px;
+        padding-top: 8px;
+        height: 56px;
+    }
+}
+
 header {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -35,7 +64,6 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 48px;
     transition: all .6s cubic-bezier(.33, .63, .65, .99);
     z-index: 100;
 }
@@ -50,9 +78,7 @@ header:hover {
 }
 
 .nav_items {
-    padding-top: 8px;
-    height: 40px;
-    font-size: 22px;
+    display: block;
     cursor: pointer;
     transition: all .6s cubic-bezier(.33, .63, .65, .99);
 }
@@ -169,35 +195,31 @@ header:hover {
 
     .content_description > h4 {
         font-size: 30px;
+        margin-top: 6px !important;
     }
 
     .content_description > h5 {
         font-size: 20px;
+        margin-top: 6px !important;
     }
 }
 
 .content_description > h3 {
     font-family: skia2, skia, Arial, sans-serif;
     font-weight: 100;
-    margin-left: 18px;
-    margin-right: 18px;
-    margin-top: 24px;
+    margin: 24px 18px 0 18px;
 }
 
 .content_description > h4 {
     font-family: skia2, skia, Arial, sans-serif;
     font-weight: 100;
-    margin-left: 18px;
-    margin-right: 18px;
-    margin-top: 24px;
+    margin: 24px 18px 0 18px;
 }
 
 .content_description > h5 {
     font-family: skia2, skia, Arial, sans-serif;
     font-weight: 100;
-    margin-left: 18px;
-    margin-right: 18px;
-    margin-top: 24px;
+    margin: 24px 18px 0 18px;
 }
 
 footer {
