@@ -12,7 +12,34 @@
     <a class="nav_items" id="nav_20c" data-index="2" href="index.html#20c">20c</a>
     <a class="nav_items" id="nav_21c" data-index="3" href="index.html#21c">21c</a>
 </header>
-
+<script src="js/render.js"></script>
+<script>
+    let render = new Render();
+    let centuryID = Render.renderUrlGet("c");
+    let centuryString = Render.centuryToString(centuryID);
+    let data = render.list_find(centuryID);
+</script>
+<div class="list_root">
+    <script>
+        for(let item of data){
+            let description = item.description;
+            if(description.length >= 350){
+                description = description.substring(0,350)+"...";
+            }
+            let buffer = `<div class="list_container">
+        <div class="list_left">
+            <img src="img/${centuryString}/${item.id}_head.jpg"/>
+        </div>
+        <div class="list_right">
+            <h3><a href="content.html?c=${centuryID}&y=${item.id}">${item.title}</a></h3>
+            <h4>${item.year}</h4>
+            <p>${description}</p>
+        </div>
+    </div>`;
+            document.write(buffer);
+        }
+    </script>
+</div>
 <footer></footer>
 </body>
 </html>
