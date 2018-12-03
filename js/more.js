@@ -27,6 +27,21 @@ function moreOnClick(target) {
                 break;
         }
     }
+    let collection = [toLeft , toRight , toCenter];
+    for(let _div of collection){
+        _div.classList.remove("more_container");
+    }
+    if (toLeft.dataset.dir==="right") {
+        toLeft.style.zIndex = 0;
+        toRight.style.zIndex = 1;
+    } else {
+        toLeft.style.zIndex = 1;
+        toRight.style.zIndex = 0;
+    }
+    toCenter.style.zIndex = 50;
+    for(let _div of collection){
+        _div.classList.add("more_container");
+    }
     toLeft.style.left = "0";
     toLeft.classList.remove("more_container_active");
     toLeft.classList.add("more_container_noactive");
@@ -39,5 +54,9 @@ function moreOnClick(target) {
     toLeft.dataset.dir = "left";
     toRight.dataset.dir = "right";
     toCenter.dataset.dir = "none";
-    doing = false;
+    setTimeout(()=>{
+        toLeft.style.zIndex = "";
+        toRight.style.zIndex = "";
+        doing = false;
+    },600);
 }

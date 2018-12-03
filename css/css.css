@@ -409,11 +409,10 @@ footer {
 
 .more_container_noactive {
     transform: scale(0.8, 0.8);
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .more_container_active {
-    z-index: 50;
     transform: scale(1.15, 1.15);
     box-shadow: 0 0 125px rgba(0, 0, 0, 0.2);
 }
