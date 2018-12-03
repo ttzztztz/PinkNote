@@ -419,7 +419,7 @@ footer {
 }
 
 .more_container {
-
+    transition: all .6s cubic-bezier(.33, .63, .65, .99);
 }
 
 .list_root {
