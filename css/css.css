@@ -105,9 +105,13 @@ header:hover {
     width: 60vw;
 }
 
+.content_nav_split {
+    height: 60px;
+}
+
 .content_container {
     text-align: center;
-    margin-top: 180px;
+    margin-top: 100px;
     position: relative;
 }
 
